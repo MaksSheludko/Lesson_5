@@ -1,0 +1,304 @@
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   box-sizing: border-box;
+}
+li {
+   list-style: none;
+}
+a,
+a:visited {
+   text-decoration: none;
+}
+a:hover {
+   text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+   font-weight: inherit;
+   font-size: inherit;
+}
+img {
+   vertical-align: top;
+}
+html,
+body {
+   height: 100%;
+}
+html {
+   font-size: 16px; /* по умолчанию */
+}
+body {
+   line-height: 1;
+   width: 1920px;
+   background-color: rgba(128, 128, 128, 0.5);
+}
+.wrapper {
+   max-width: 1600px;
+   min-height: 100%;
+   overflow: hidden;
+   font-family: "Bebas Neue", sans-serif;
+   margin: 0px auto;
+   padding: 50px 5px 5px 5px;
+}
+/* ------------------------------ */
+
+/* &display=swap&subset=cyrillic-ext */
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue:regular&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Cinzel:regular,500,600,700,800,900&display=swap&subset=cyrillic-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic&display=swap&subset=cyrillic-ext");
+/* Подключение шрифта из папки */
+@font-face {
+   font-family: "Gilroy";
+   src: url("../fonts/Gilroy-BoldItalic.woff2") format("woff2"), url("../fonts/Gilroy-BoldItalic.woff") format("woff");
+   font-weight: bold;
+   font-style: italic;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Gilroy";
+   src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff");
+   font-weight: bold;
+   font-style: normal;
+   font-display: swap;
+}
+@font-face {
+   font-family: "Gilroy";
+   src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff");
+   font-weight: normal;
+   font-style: normal;
+   font-display: swap;
+}
+/* Подключение шрифта из папки */
+
+.title-header {
+   text-align: center;
+   font-size: 100px;
+   text-transform: uppercase;
+   text-shadow: -5px -5px 5px rgb(255, 2, 2);
+   margin: 0px 0px 20px 0px;
+}
+
+.block-one {
+   background-color: green;
+   color: white;
+   min-width: 300px;
+   min-height: 300px;
+   font-size: 20px;
+   line-height: 20px;
+   font-weight: 700;
+}
+.block-two {
+   background-color: rgb(0, 23, 128);
+   color: white;
+   max-width: 800px;
+   max-height: 1000px;
+   font-size: 25px;
+   line-height: 25px;
+   margin: -200px 20px 20px 20px;
+   overflow: hidden;
+   padding: 0px 80px;
+   font-family: "Cinzel", sans-serif;
+   font-weight: 700;
+}
+
+.block-three {
+   background-color: rgb(253, 5, 5);
+   color: white;
+   width: 1600px;
+   height: 400px;
+   margin: 0px auto 50px auto;
+   font-size: 30px;
+   line-height: 30px;
+   overflow: scroll;
+   padding: 0px 30px;
+   font-family: "Lato", sans-serif;
+   font-weight: 700;
+   font-style: italic;
+}
+
+.block-four {
+   background-color: #6b8e23;
+   color: white;
+   width: 800px;
+   height: 300px;
+   margin: auto 0px 20px 50px;
+   font-size: 30px;
+   line-height: 30px;
+   overflow: scroll;
+   padding: 0px 30px;
+   font-family: "Lato", sans-serif;
+   font-weight: 700;
+   font-style: italic;
+}
+
+.block-five {
+   background-color: #010200;
+   color: white;
+   width: 600px;
+   height: 200px;
+   margin: 0px auto;
+   font-size: 25px;
+   line-height: 20px;
+   overflow: hidden;
+   padding: 0px 30px;
+   font-family: "Lato", sans-serif;
+   margin: 0px 0px 50px auto;
+   padding: 30px;
+}
+.display {
+   display: inline;
+   font-size: 30px;
+   line-height: 30px;
+   text-align: right;
+}
+.task {
+   font-family: "Gilroy", sans-serif;
+}
+
+.task__taile h2 {
+   font-size: 40px;
+   line-height: 40px;
+   text-align: center;
+   font-weight: 700;
+   text-decoration: underline;
+}
+
+.show-block {
+   max-width: 600px;
+   min-height: 600px;
+   color: #fff;
+   margin: 0px auto;
+   text-align: center;
+   padding: 15% 10px 0px 10px;
+   background-color: rgb(248, 5, 228);
+   font-size: 50px;
+}
+.show-span {
+   margin: 0px 0px 40px 0px;
+}
+.show-span span {
+   font-size: 50px;
+   line-height: 50px;
+   background-color: chocolate;
+   margin: 20px;
+   padding: 20px;
+}
+.task__one span {
+   display: block;
+   font-size: 20px;
+   font-weight: 700;
+   margin: 0px 0px 10px 0px;
+}
+.task__one {
+   margin: 0px 0px 30px 0px;
+}
+.task__two-parent {
+   margin: 0px 0px 30px 0px;
+}
+.child {
+   display: inline-block;
+   max-width: 200px;
+   max-height: 200px;
+   overflow: scroll;
+   background-color: yellow;
+   padding: 15px;
+}
+
+.task__three {
+   margin: 0px 0px 30px 0px;
+}
+.task__three a {
+   font-size: 50px;
+   text-decoration: none;
+   display: inline-block;
+}
+.href {
+   background-color: green;
+   color: #010200;
+}
+.task__four {
+   margin: 0px 0px 30px 0px;
+}
+.task__four p {
+   display: inline-block;
+   max-width: 100px;
+   max-height: 300px;
+   background-color: orange;
+   color: white;
+   margin: 0px 15px;
+   padding: 10px;
+   overflow: scroll;
+}
+.task__five {
+   margin: 0px 0px 30px 0px;
+}
+.task__five-div-one {
+   background-color: rgb(0, 0, 0);
+   color: lavender;
+   max-width: 1600px;
+   min-height: 300px;
+   font-size: 30px;
+   line-height: 30px;
+   text-transform: capitalize;
+   padding: 30px;
+}
+.task__five-div-two {
+   margin: -50px 0px 0px 20px;
+   background-color: rgb(0, 4, 252);
+   color: #fff;
+   max-width: 1200px;
+   min-height: 300px;
+   font-size: 20px;
+   line-height: 50px;
+   text-transform: uppercase;
+   padding: 30px;
+}
+.task__six {
+   max-width: 100%;
+   max-height: 200px;
+   margin: 0px 0px 20px 0px;
+   overflow: scroll;
+}
+.task__six span {
+   display: block;
+   background-color: green;
+   color: honeydew;
+   padding: 15px;
+   font-size: 20px;
+   line-height: 20px;
+}
+
+footer {
+   background-color: #dcc6e0;
+   font-family: "Gilroy", sans-serif;
+   font-weight: 700;
+   font-style: italic;
+   font-size: 30px;
+}
+.footer__title {
+   text-align: center;
+}
+.footer__text h2 {
+   text-align: center;
+}
+.footer__image img {
+   width: 100%;
+}
+
+._title-item {
+   font-size: 25px;
+   font-weight: 700;
+   font-family: "Lato", sans-serif;
+   margin: 20px 0px;
+   background-color: white;
+   display: inline-block;
+}
